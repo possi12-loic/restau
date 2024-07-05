@@ -1,0 +1,73 @@
+/* configuration du body*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* début de configuration de la nav-bar*/
+.fl-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    z-index: 99;
+}
+
+.fl-navbar .nav-link{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out,border-color 0.3s ease;
+}
+
+.fl-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-teal);
+}
+
+.btn-order{
+    color: var(--bs-teal);
+    border-color:var(--bs-teal) ;
+    transition: 0.5s;
+}
+.btn-order:hover,
+.btn-order:active{
+    color: #fff;
+    background-color:var(--bs-teal) ;
+}
+/* fin de configuration de la nav-bar*/
+
+/* configuration de la section découvrir*/
+.Decouvrir{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('photos/drinks-2578446_1280.jpg'),center center;
+    background-attachment: fixed;
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* début de  configuration de la galleries*/
+.galleries{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    padding: 0 14px;
+}
+.galleries li{
+    list-style-type: none;
+    height: 300px;
+    flex-grow: 1;
+    transition: all 0.3s;
+}
+.galleries img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.galleries li :hover{
+    list-style-type: none;
+    height: 300px;
+    flex-grow: 1;
+    transform: scale(0.95);
+    width: 100%;
+}
+/* fin de  configuration de la galleries*/

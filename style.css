@@ -1,0 +1,82 @@
+/*definition des polices à utiliser*/
+body{
+    font-family:serif;
+}
+/*debut de con figuration de la navbar*/
+
+.fl-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    z-index: 99;
+}
+
+.fl-navbar .nav-link{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out,border-color 0.3s ease;
+}
+
+.fl-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-teal);
+}
+
+.btn-order{
+    color: var(--bs-teal);
+    border-color:var(--bs-teal) ;
+    transition: 0.5s;
+}
+.btn-order:hover,
+.btn-order:active{
+    color: #fff;
+    background-color:var(--bs-teal) ;
+}
+/*configuratuon de la section banner*/
+.banner,
+.form{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('photos/restaurant-449952_1280.jpg'),center center;
+     background-attachment: fixed;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner .banner-des{
+    font-size: 48px;
+    font-weight: 400px;
+    color: #fff;
+}
+/*configuration de la section divers*/
+
+.divers{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('photos/restaurant-2623071_1280.jpg'),center center;
+    background-attachment: fixed;
+   height: 750px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+    @media screen and(max-width: 575.98px) {
+       .divers{
+            height: 800px;
+        }
+    }
+
+/*configurationdu formulaire*/
+.form{
+    height: 500px;
+}
+.form input[type=submit]{
+    background-color:var(--bs-teal);
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+.form input[type=submit]:hover{
+    background-color:var(--bs-danger);
+    color: white;
+    border: 1px solid var(--bs-info);
+    border-radius: 5px;
+}
